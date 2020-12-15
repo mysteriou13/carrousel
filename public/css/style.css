@@ -1,0 +1,28 @@
+
+ .container{
+
+position: absolute;
+
+ top:5%;
+left:15%;
+width:60%;
+height:60%;
+
+}
+
+  .carousel-inner, carousel-item{
+ background-color:blue;
+  
+
+ width:100%;
+ height:90%;
+
+
+  
+  }
+
+ #carouselExampleControls{
+
+background-color:black;
+
+ }  
