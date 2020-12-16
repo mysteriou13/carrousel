@@ -10,19 +10,22 @@ height:60%;
 
 }
 
-  .carousel-inner, carousel-item{
- background-color:blue;
-  
-
- width:100%;
- height:90%;
 
 
-  
-  }
+#carouselExampleControls{
 
- #carouselExampleControls{
+background-color:grey;
 
-background-color:black;
+}
 
- }  
+#control{
+
+background-color:white;
+
+}
+
+.full{
+background-color:red;
+width:100%;
+height:100%;
+}
