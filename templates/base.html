@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+
+     <meta  name = "viewport" content = "width=device-width, initial-scale=1">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
  
@@ -12,17 +14,44 @@
   </head>
     <body>
         {% block body %}
-      
      
-     <div id="carouselExampleControls" class="carousel slide container " data-bs-ride="carousel">
+</br> 
+     <div  class = "full">
+    
+   <div id="carouselExampleControls" class="carousel slide container " data-bs-ride="carousel">
+
 
      <ol class="carousel-indicators ">
     <li id = "control" class = "active" data-bs-target="#carouselExampleControls" data-bs-slide-to="0"></li>
     <li id = "control" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
     <li id = "control" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
     </ol>
- 
-  <div class="carousel-inner full ">
+
+</br>
+</br>
+  <div>
+
+<center>
+
+ <button class = "btn btn-primary"  type = "button" onclick ="display()"> parametre 
+
+ <button class = "btn btn-primary" id ="btnparametre" type = "button" onclick ="display()"> +
+
+
+</button> </center>
+
+  </div>
+
+  <div   id = "parametre" class = "d-block">
+
+parametre
+
+   </div>
+
+
+<div class = "d-flex flex-nowrap full height:100%; width:100%;">
+
+  <div class="carousel-inner  ">
     <div class="carousel-item active ">
    1 
    </div>
@@ -32,6 +61,7 @@
     <div class="carousel-item ">
    3
     </div>
+</div>
 
   </div>
   <a  class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
@@ -44,14 +74,14 @@
   </a>
 </div>
 
-
+</div>
+</div>
 
        {% endblock %}
         {% block javascripts %}{% endblock %}
 
 <script src="{{ asset("../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js") }}"></script>
-<script src = "{{ asset("./script/carousel.js") }}">
-</script>
+<script src = "{{ asset("./script/carousel.js") }}"></script>
 
 
 
