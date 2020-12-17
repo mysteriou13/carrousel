@@ -11,23 +11,35 @@ var carousel = new bootstrap.Carousel(myCarousel, {
 
   var classname =  document.getElementById("parametre").className;
 
-  document.getElementById("btnparametre").innerText;
 
-  if(classname == "d-block"){
+  var chaine = "d-block";
 
-  document.getElementById("btnparametre").innerText = "+";
+  var Resultat = classname.indexOf(chaine);
+  
 
-  document.getElementById("parametre").className ="d-none";
+   if(Resultat == 1){
 
-  }else{
+  var none = classname.replace("d-block", 'd-none');
 
-  document.getElementById("btnparametre").innerText = "-";
+  document.getElementById("parametre").className = none;
+
+  document.getElementById("btnparametre").innerHTML = "+";
+
+   }else{
+ 
+    var none = classname.replace("d-none", 'd-block');
+ 
+   document.getElementById("btnparametre").innerHTML = "-";
 
 
- document.getElementById("parametre").className ="d-block";
+  document.getElementById("parametre").className = none;
+
+ 
+
 
 
   }
+
 
  }
 

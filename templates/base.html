@@ -33,25 +33,37 @@
 
 <center>
 
+<div class = "mb-2">
+
  <button class = "btn btn-primary"  type = "button" onclick ="display()"> parametre 
 
  <button class = "btn btn-primary" id ="btnparametre" type = "button" onclick ="display()"> +
-
+</div>
 
 </button> </center>
 
   </div>
 
-  <div   id = "parametre" class = "d-block">
+  <div   id = "parametre"  class = " d-none border border-dark  mt-2 mb-2">
 
-parametre
+
+   parametre
+
 
    </div>
-
 
 <div class = "d-flex flex-nowrap full height:100%; width:100%;">
 
   <div class="carousel-inner  ">
+   <a  class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+    <span style ="background-color:black" class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span  class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+    <span style ="background-color:black" class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+
     <div class="carousel-item active ">
    1 
    </div>
@@ -64,21 +76,15 @@ parametre
 </div>
 
   </div>
-  <a  class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-    <span style ="background-color:black" class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span  class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-    <span style ="background-color:black" class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
+
 </div>
 
 </div>
 </div>
 
        {% endblock %}
-        {% block javascripts %}{% endblock %}
+  
+      {% block javascripts %}{% endblock %}
 
 <script src="{{ asset("../vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js") }}"></script>
 <script src = "{{ asset("./script/carousel.js") }}"></script>
